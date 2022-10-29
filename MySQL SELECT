@@ -1,0 +1,28 @@
+The MySQL SELECT Statement
+
+--The SELECT statement is used to select data from a database.
+--The data returned is stored in a result table, called the result-set.
+
+--SELECT Syntax
+--SELECT column1, column2, ... FROM table_name;
+SELECT CustomerName, City, Country FROM Customers;
+--SELECT * FROM table_name;
+SELECT * FROM Customers;
+
+
+
+The MySQL SELECT DISTINCT Statement
+
+--The SELECT DISTINCT statement is used to return only distinct (different) values.
+--Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+--SELECT DISTINCT Syntax
+SELECT DISTINCT column1, column2, ... FROM table_name;
+SELECT DISTINCT Country FROM Customers;
+
+--SELECT Example Without DISTINCT
+SELECT Country FROM Customers;  
+
+
+--The following SQL statement counts and returns the number of different (distinct) countries in the "Customers" table:
+SELECT COUNT(DISTINCT Country) FROM Customers;
