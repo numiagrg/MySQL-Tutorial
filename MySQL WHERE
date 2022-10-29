@@ -1,0 +1,17 @@
+The MySQL WHERE Clause
+
+--The WHERE clause is used to filter records.
+--It is used to extract only those records that fulfill a specified condition.
+
+--WHERE Syntax
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+--WHERE Clause Example
+SELECT * FROM Customers
+WHERE Country = 'Mexico';
+
+--Text Fields vs. Numeric Fields
+SELECT * FROM Customers
+WHERE CustomerID = 1;
